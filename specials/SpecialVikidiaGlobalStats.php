@@ -112,8 +112,13 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
         foreach($rawgrps as $g) {
           array_push($grps, $g);
         }
-        $ignoredgroups = array('*','user','autoconfirmed','autopatrol','patroller');
-        $grps = implode(",", array_diff($grps, $ignoredgroups));
+
+        $rawimplgrps = $user->{'implicitgroups'}->children();
+        $implgrps = array();
+        foreach($rawimplgrps as $ig) {
+          array_push($implgrps, $ig);
+        }
+        $grps = implode(",", array_diff($grps, $implgrps));
       
         $output .= Html::closeElement( 'tr' );
       
@@ -145,7 +150,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
     $projects = array('ca','de','el','en','es','eu','fr','it','ru','scn');
     foreach($projects as $prj) {
         $wikiname = $prj.".vikidia.org";
-        $url = "https://".$wikiname."/w/api.php?action=query&list=users&ususers=".$target."&usprop=blockinfo|groups|editcount|registration&format=xml";
+        $url = "https://".$wikiname."/w/api.php?action=query&list=users&ususers=".$target."&usprop=blockinfo|groups|implicitgroups|editcount|registration&format=xml";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
