@@ -110,7 +110,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
         $rawgrps = $user->{'groupmemberships'}->children();
         $grps = array();
         foreach($rawgrps as $g) {
-          array_push($grps, $g);
+          array_push($grps, $g['group']);
         }
     
         $output .= Html::closeElement( 'tr' );
