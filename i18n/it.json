@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Linedwell"
+        ]
+    },
+    "vikidiaGlobalStats": "VikidiaGlobalStats",
+    "vikidiaGlobalStats-desc": "[[Special:VikidiaGlobalStats|Ritrova le statistiche globale]] di un utente su tutti i progetti Vikidia.",
+    "special-vikidiaGlobalStats-intro": "Entra un nome utente  per vedere le statistiche globale di questo utente.",
+    "special-vikidiaGlobalStats-title": "Vikidia Global Stats",
+
+    "vikidiaglobalstats-globalstats": "Statistiche globale",
+    "vikidiaglobalstats-searchuser": "Ricerca utente",
+    "vikidiaglobalstats-username": "Nome utente",
+    "vikidiaglobalstats-search" : "Ricerca",
+
+    "vikidiaglobalstats-project": "Wiki",
+    "vikidiaglobalstats-registered" : "Registrato",
+    "vikidiaglobalstats-blocks": "Bloccato",
+    "vikidiaglobalstats-blocked" : "Bloccato, scade il ",
+    "vikidiaglobalstats-blocked-indef" : "Bloccato a tempo indeterminato",
+    "vikidiaglobalstats-editcount": "Conteggio delle modifiche",
+    "vikidiaglobalstats-groups": "Gruppi"
+}

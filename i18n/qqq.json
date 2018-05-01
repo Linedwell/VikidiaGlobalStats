@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Linedwell"
+        ]
+    },
+    "vikidiaGlobalStats": "The name of the extension",
+    "vikidiaGlobalStats-desc": "{{desc|name=VikidiaGlobalStats|url=}}",
+    "special-vikidiaGlobalStats-intro": "Description appearing on top of <tvar|1>Special:{{ll|VikidiaGlobalStats}}</>.",
+    "special-vikidiaGlobalStats-title": "Title of the special page Special:VikidiaGlobalStats",
+
+    "vikidiaglobalstats-globalstats": "Title of the global statistics fieldset",
+    "vikidiaglobalstats-searchuser": "Title of the search user fieldset",
+    "vikidiaglobalstats-username": "Label of username",
+    "vikidiaglobalstats-search" : "Search button",
+
+    "vikidiaglobalstats-project": "Title of the project column",
+    "vikidiaglobalstats-registered" : "Title of the registered column",
+    "vikidiaglobalstats-blocks": "Title of the blocked column",
+    "vikidiaglobalstats-blocked" : "Indication of when the block expires",
+    "vikidiaglobalstats-blocked-indef" : "indication of an indefinite block",
+    "vikidiaglobalstats-editcount": "Title of the editcount column",
+    "vikidiaglobalstats-groups": "Title of the groups column"
+}

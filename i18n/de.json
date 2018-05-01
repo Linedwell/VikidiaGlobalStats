@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Linedwell",
+			"Orikrin1998"
+        ]
+    },
+    "vikidiaGlobalStats": "VikidiaGlobalStats",
+    "vikidiaGlobalStats-desc": "[[Special:VikidiaGlobalStats|Globale Statistiken]] von einem Benutzer über alle Vikidia Projekte holen.",
+    "special-vikidiaGlobalStats-intro": "Einen Benutzername eingeben um die globale Statistiken über diesen Benutzer zu holen",
+    "special-vikidiaGlobalStats-title": "Vikidia Global Stats",
+
+    "vikidiaglobalstats-globalstats": "Globale Statistiken",
+    "vikidiaglobalstats-searchuser": "Benutzer suchen",
+    "vikidiaglobalstats-username": "Benutzername",
+    "vikidiaglobalstats-search" : "Suchen",
+
+    "vikidiaglobalstats-project": "Wiki",
+    "vikidiaglobalstats-registered" : "Anmeldezeitpunkt",
+    "vikidiaglobalstats-blocks": "Gesperrt",
+    "vikidiaglobalstats-blocked" : "Gesperrt, abläuft an ",
+    "vikidiaglobalstats-blocked-indef" : "Unbegrenzt gesperrt",
+    "vikidiaglobalstats-editcount": "Bearbeitungszähler",
+    "vikidiaglobalstats-groups": "Gruppen"
+}

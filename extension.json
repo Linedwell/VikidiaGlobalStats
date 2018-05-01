@@ -1,0 +1,27 @@
+{
+    "name": "VikidiaGlobalStats",
+    "version": "0.0.b",
+    "author": [
+        "Linedwell"
+    ],
+    "url": "",
+    "namemsg": "vikidiaGlobalStats",
+    "descriptionmsg": "vikidiaGlobalStats-desc",
+    "license-name": "GPL-2.0+",
+    "type": "other",
+    "manifest_version": 1,
+    "MessagesDirs": {
+        "VikidiaGlobalStats": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "SpecialVikidiaGlobalStats": "specials/SpecialVikidiaGlobalStats.php"
+    },
+    "SpecialPages": {
+        "VikidiaGlobalStats": "SpecialVikidiaGlobalStats"
+    },
+    "ExtensionMessagesFiles": {
+        "VikidiaGlobalStatsAlias": "VikidiaGlobalStats.alias.php"
+    }
+}

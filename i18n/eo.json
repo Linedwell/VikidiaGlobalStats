@@ -1,0 +1,26 @@
+{
+    "@metadata": {
+        "authors": [
+            "Linedwell",
+			"Orikrin1998"
+        ]
+    },
+    "vikidiaGlobalStats": "VikidiaGlobalStats",
+    "vikidiaGlobalStats-desc": "[[Special:VikidiaGlobalStats|Afiŝi la statistikojn tutlokajn]] de uzanto pri ĉiu la Vikidprojektoj.",
+    "special-vikidiaGlobalStats-intro": "Entajpi uzantnomon por afiŝi la statistikojn tutlokajn de tiu uzanto.",
+    "special-vikidiaGlobalStats-title": "Vikidia Global Stats",
+
+    "vikidiaglobalstats-globalstats": "Statistikoj tutlokaj",
+    "vikidiaglobalstats-searchuser": "Serĉi uzanton",
+    "vikidiaglobalstats-username": "Uzantnomo",
+    "vikidiaglobalstats-search" : "Serĉi",
+
+    "vikidiaglobalstats-project": "Vikio",
+    "vikidiaglobalstats-registered" : "Registrita je",
+    "vikidiaglobalstats-blocks": "Forbarita, senvalidiĝos je ",
+    "vikidiaglobalstats-blocked" : "Blokita ĝis ",
+    "vikidiaglobalstats-blocked-indef" : "Forbarita ĉiame",
+
+    "vikidiaglobalstats-editcount": "Redaktnombro",
+    "vikidiaglobalstats-groups": "Grupoj"
+}

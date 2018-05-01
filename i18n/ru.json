@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Linedwell",
+			"Orikrin1998"
+        ]
+    },
+    "vikidiaGlobalStats": "VikidiaGlobalStats",
+    "vikidiaGlobalStats-desc": "[[Special:VikidiaGlobalStats|Получить глобальную статистику]] о пользователе на всех проектах Vikidia.",
+    "special-vikidiaGlobalStats-intro": "Введите имя пользователя, чтобы посмотреть глобальную статистику пользователя.",
+    "special-vikidiaGlobalStats-title": "VikidiaGlobalStats",
+
+    "vikidiaglobalstats-globalstats": "Глобальная статистика",
+    "vikidiaglobalstats-searchuser": "Search user",
+    "vikidiaglobalstats-username": "Имя участника",
+    "vikidiaglobalstats-search" : "найти",
+
+    "vikidiaglobalstats-project": "Вики",
+    "vikidiaglobalstats-registered" : "Регистрация",
+    "vikidiaglobalstats-blocks": "Заблокирован",
+    "vikidiaglobalstats-blocked" : "Заблокирован, истекает ",
+    "vikidiaglobalstats-blocked-indef" : "Заблокирован бессрочно",
+    "vikidiaglobalstats-editcount": "Счётчик правок",
+    "vikidiaglobalstats-groups": "Γруппы"
+}
