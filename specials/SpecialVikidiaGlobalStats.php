@@ -109,6 +109,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
 
         $rawgrps = $user->{'groupmemberships'}->children();
         $grps = array();
+        alert($rawgrps);
         foreach($rawgrps as $g) {
           array_push($grps, $g['group']);
         }
