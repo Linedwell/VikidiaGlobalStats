@@ -141,7 +141,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
   
   function generateStats($target) {
     $stats = array();
-    $projects = array('ca','de','el','en','es','eu','fr','it','ru','scn');
+    $projects = array('ca','de','el','en','es','eu','fr','hi','it','ru','scn');
     foreach($projects as $prj) {
         $wikiname = $prj.".vikidia.org";
         $url = "https://".$wikiname."/w/api.php?action=query&list=users&ususers=".$target."&usprop=blockinfo|groupmemberships|editcount|registration&format=xml";
