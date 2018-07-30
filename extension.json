@@ -7,7 +7,7 @@
     "url": "",
     "namemsg": "vikidiaGlobalStats",
     "descriptionmsg": "vikidiaGlobalStats-desc",
-    "license-name": "GPL-2.0+",
+    "license-name": "GPL-3.0+",
     "type": "other",
     "manifest_version": 1,
     "MessagesDirs": {
