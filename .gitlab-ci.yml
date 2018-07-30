@@ -1,0 +1,10 @@
+---
+stages:
+  - check
+  
+phplint:
+  stage: check
+  image: php:7.0-alpine
+  script:
+    - ls
+```
