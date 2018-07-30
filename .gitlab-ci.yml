@@ -6,5 +6,5 @@ phplint:
   stage: check
   image: php:7.0-alpine
   script:
-    - ls
+    - for f in $(find . -name '*.php'); do php -l $f; done
 ...
