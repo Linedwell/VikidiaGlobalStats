@@ -22,9 +22,9 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
 		$out->addWikiMsg( 'special-vikidiaGlobalStats-intro' );
 
     $target = 
-        trim(
+        //trim(
 				    str_replace( '_', ' ',
-					  $this->getRequest()->getText( 'target', $sub ) ) );
+					  $this->getRequest()->getText( 'target', $sub ) );
                                         
     $this->showSearchForm($target);
     
