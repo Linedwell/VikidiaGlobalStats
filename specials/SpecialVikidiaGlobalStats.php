@@ -21,7 +21,10 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
 		//$out->addHelpLink( 'How to become a MediaWiki hacker' );
 		$out->addWikiMsg( 'special-vikidiaGlobalStats-intro' );
 
-    $target = isset( $sub ) ? $sub : $this->getRequest()->getText( 'target' );
+    $target = 
+        trim(
+				    str_replace( '_', ' ',
+					  $this->getRequest()->getText( 'target', $sub ) ) );
                                         
     $this->showSearchForm($target);
     
@@ -39,8 +42,8 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
     
     $title = htmlspecialchars( $this->getPageTitle()->getPrefixedText(), ENT_QUOTES );
     $action = htmlspecialchars( $wgScript, ENT_QUOTES );
-    $username = $this->msg( 'vikidiaglobalstats-username' )->text();
-    $search = $this->msg( 'vikidiaglobalstats-search' )->text();
+    $username = htmlspecialchars( $this->msg( 'vikidiaglobalstats-username' )->text());
+    $search = htmlspecialchars( $this->msg( 'vikidiaglobalstats-search' )->text());
     
     $out = $this->getOutput();
     $output = "<fieldset>".
