@@ -42,10 +42,8 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
     
     $title = htmlspecialchars( $this->getPageTitle()->getPrefixedText(), ENT_QUOTES );
     $action = htmlspecialchars( $wgScript, ENT_QUOTES );
-    $username = $this->msg( 'vikidiaglobalstats-username' )->text();
-    $search = $this->msg( 'vikidiaglobalstats-search' )->text();
-
-    echo print_r($username);
+    $username = htmlspecialchars( $this->msg( 'vikidiaglobalstats-username' )->text() );
+    $search = htmlspecialchars( $this->msg( 'vikidiaglobalstats-search' )->text() );
     
     $out = $this->getOutput();
     $output = "<fieldset>".
