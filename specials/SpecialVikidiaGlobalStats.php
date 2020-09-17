@@ -45,7 +45,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
     $username = $this->msg( 'vikidiaglobalstats-username' )->text();
     $search = $this->msg( 'vikidiaglobalstats-search' )->text();
 
-    echo $username
+    echo print_r($username);
     
     $out = $this->getOutput();
     $output = "<fieldset>".
