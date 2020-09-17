@@ -22,7 +22,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
 		$out->addWikiMsg( 'special-vikidiaGlobalStats-intro' );
 
     $target = trim(
-				    str_replace( ' ', '_',
+				    str_replace( '_', ' ',
 					  $this->getRequest()->getText( 'target', $sub ) ) );
                                         
     $this->showSearchForm($target);
@@ -92,11 +92,12 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
       $wikiname = key($stats).".vikidia.org";
       $user = $xml->{'query'}[0]->{'users'}[0]->{'user'}[0];
       if($user && ! $user['missing']) {
-        $userlink = "https://".$wikiname."/wiki/User:".$user['name'];
+        $username = str_replace( ' ', '_',$user['name']);
+        $userlink = "https://".$wikiname."/wiki/User:".$username;
 
         $userregistration = $lang->timeanddate($user['registration']); 
 
-        $blklog = "https://".$wikiname."/wiki/Special:Log/block?page=".$user['name'];
+        $blklog = "https://".$wikiname."/wiki/Special:Log/block?page=".$username;
         $blkexpiry = "&mdash;";
         $blkreason = "";
         if($user['blockid']) {
@@ -106,7 +107,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
             $blkexpiry = $this->msg( 'vikidiaglobalstats-blocked' )->text(). " ".$lang->timeanddate($user['blockexpiry']).".";
         }
         
-        $contribslink = "https://".$wikiname."/wiki/Special:Contributions/".$user['name'];
+        $contribslink = "https://".$wikiname."/wiki/Special:Contributions/".$username;
         $edits = $user['editcount'];
 
         $rawgrps = $user->{'groupmemberships'}->children();
@@ -142,6 +143,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
   }
   
   function generateStats($target) {
+    $target = str_replace(' ','_', $target);
     $stats = array();
     $projects = array('ca','de','el','en','es','eu','fr','hy','it','ru','scn');
     foreach($projects as $prj) {
