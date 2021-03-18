@@ -21,7 +21,9 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
 		//$out->addHelpLink( 'How to become a MediaWiki hacker' );
 		$out->addWikiMsg( 'special-vikidiaGlobalStats-intro' );
 
-    $target = isset( $sub ) ? $sub : $this->getRequest()->getText( 'target' );
+    $target = trim(
+				    str_replace( '_', ' ',
+					  $this->getRequest()->getText( 'target', $sub ) ) );
                                         
     $this->showSearchForm($target);
     
@@ -39,8 +41,8 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
     
     $title = htmlspecialchars( $this->getPageTitle()->getPrefixedText(), ENT_QUOTES );
     $action = htmlspecialchars( $wgScript, ENT_QUOTES );
-    $username = $this->msg( 'vikidiaglobalstats-username' )->text();
-    $search = $this->msg( 'vikidiaglobalstats-search' )->text();
+    $username = htmlspecialchars( $this->msg( 'vikidiaglobalstats-username' )->text() );
+    $search = htmlspecialchars( $this->msg( 'vikidiaglobalstats-search' )->text() );
     
     $out = $this->getOutput();
     $output = "<fieldset>".
@@ -90,11 +92,12 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
       $wikiname = key($stats).".vikidia.org";
       $user = $xml->{'query'}[0]->{'users'}[0]->{'user'}[0];
       if($user && ! $user['missing']) {
-        $userlink = "https://".$wikiname."/wiki/User:".$user['name'];
+        $username = str_replace( ' ', '_',$user['name']);
+        $userlink = "https://".$wikiname."/wiki/User:".$username;
 
         $userregistration = $lang->timeanddate($user['registration']); 
 
-        $blklog = "https://".$wikiname."/wiki/Special:Log/block?page=".$user['name'];
+        $blklog = "https://".$wikiname."/wiki/Special:Log/block?page=".$username;
         $blkexpiry = "&mdash;";
         $blkreason = "";
         if($user['blockid']) {
@@ -104,7 +107,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
             $blkexpiry = $this->msg( 'vikidiaglobalstats-blocked' )->text(). " ".$lang->timeanddate($user['blockexpiry']).".";
         }
         
-        $contribslink = "https://".$wikiname."/wiki/Special:Contributions/".$user['name'];
+        $contribslink = "https://".$wikiname."/wiki/Special:Contributions/".$username;
         $edits = $user['editcount'];
 
         $rawgrps = $user->{'groupmemberships'}->children();
@@ -140,8 +143,9 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
   }
   
   function generateStats($target) {
+    $target = str_replace(' ','_', $target);
     $stats = array();
-    $projects = array('ca','de','el','en','es','eu','fr','hy','it','ru','scn');
+    $projects = array('ca','de','el','en','es','eu','fr','hy','it','pt','ru','scn');
     foreach($projects as $prj) {
         $wikiname = $prj.".vikidia.org";
         $url = "https://".$wikiname."/w/api.php?action=query&list=users&ususers=".$target."&usprop=blockinfo|groupmemberships|editcount|registration&format=xml";
