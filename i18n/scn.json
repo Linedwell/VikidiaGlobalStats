@@ -5,20 +5,21 @@
         ]
     },
     "vikidiaGlobalStats": "VikidiaGlobalStats",
-    "vikidiaGlobalStats-desc": "[[Special:VikidiaGlobalStats|Ritrova le statistiche globale]] di un utente su tutti i progetti Vikidia.",
-    "special-vikidiaGlobalStats-intro": "Entra un nome utente  per vedere le statistiche globale di questo utente.",
+    "vikidiaGlobalStats-desc": "[[Special:VikidiaGlobalStats|Ritruva li statìstichi glubbali]] d'un utenti supra tutti li pruggetti Vikidia.",
+    "special-vikidiaGlobalStats-intro": "Nzirisci nu nomu utenti pi taliari li statìstichi glubbali di chiḍḍ'utenti.",
     "special-vikidiaGlobalStats-title": "Vikidia Global Stats",
 
-    "vikidiaglobalstats-globalstats": "Global statistics",
-    "vikidiaglobalstats-searchuser": "Search user",
-    "vikidiaglobalstats-username": "Nomu utilizzaturi",
+    "vikidiaglobalstats-globalstats": "Statìstichi glubbali",
+    "vikidiaglobalstats-searchuser": "Arricerca n'utenti",
+    "vikidiaglobalstats-username": "Nomu di l'utenti:",
     "vikidiaglobalstats-search" : "Arricerca",
 
     "vikidiaglobalstats-project": "Wiki",
-    "vikidiaglobalstats-registered" : "Registered",
+    "vikidiaglobalstats-registered" : "Nscrivutu lu",
     "vikidiaglobalstats-blocks": "Bluccatu",
-    "vikidiaglobalstats-blocked" : "Bloccato, scade il ",
-    "vikidiaglobalstats-blocked-indef" : "Bloccato a tempo indeterminato",
-    "vikidiaglobalstats-editcount": "Conteggio delle modifiche",
+    "vikidiaglobalstats-blocked" : "Bluccatu finu lu ",
+    "vikidiaglobalstats-blocked-indef" : "Bluccatu a tempu nditirminatu",
+
+    "vikidiaglobalstats-editcount": "Cunteggiu dî canciamenti",
     "vikidiaglobalstats-groups": "Gruppi"
 }
