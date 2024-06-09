@@ -155,6 +155,7 @@ class SpecialVikidiaGlobalStats extends SpecialPage {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); //désactivation temporaire de la vérification du certificat SSL
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //désactivation temporaire de la vérification du certificat SSL
+        curl_setopt($ch, CURLOPT_USERAGENT, "VikidiaGlobalStats/1.39")
         $stats[$prj] = curl_exec($ch);
         curl_close($ch);
     }
